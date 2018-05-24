@@ -106,7 +106,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="290dp">
 
-                            <com.dmedia.dlimited.widgets.GrayScaleImageView
+                            <com.dmedia.dlimited.widget.GrayScaleImageView
                                 android:id="@+id/iv_profile_background"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -117,7 +117,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#8c424242" />
 
-                            <com.dmedia.dlimited.widgets.RoundedImageView
+                            <com.dmedia.dlimited.widget.RoundedImageView
                                 android:id="@+id/riv_profile"
                                 android:layout_width="85dp"
                                 android:layout_height="85dp"

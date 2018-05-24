@@ -14,7 +14,7 @@
         android:layout_marginLeft="25dp"
         android:gravity="center">
 
-        <com.dmedia.dlimited.widgets.RoundedImageView
+        <com.dmedia.dlimited.widget.RoundedImageView
             android:id="@+id/riv_icon"
             android:layout_width="45dp"
             android:layout_height="45dp"

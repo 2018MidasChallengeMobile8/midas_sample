@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/p00_img_bgver4"
-    tools:context="com.dmedia.dlimited.IntroActivity">
+    tools:context="com.dmedia.dlimited.activity.IntroActivity">
 
 
     <ImageView

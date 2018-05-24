@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/p01_img_bg"
     android:fitsSystemWindows="true"
-    tools:context=".AccountLoginActivity">
+    tools:context=".activity.AccountLoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"

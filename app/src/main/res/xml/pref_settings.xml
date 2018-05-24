@@ -34,14 +34,14 @@
                 android:targetClass="com.dmedia.dlimited.SettingsDcodeActivity"
                 android:targetPackage="com.dmedia.dlimited" />
         </Preference>
-        <com.dmedia.dlimited.SettingsRemoveEventHistoryDialogPreference
+        <com.dmedia.dlimited.others.SettingsRemoveEventHistoryDialogPreference
             android:dialogMessage="@string/message_dialog_account_remove_event_history"
             android:key="pref_account_remove_event_history"
             android:layout="@layout/preferences"
             android:negativeButtonText="삭제"
             android:positiveButtonText="취소"
             android:title="@string/pref_title_account_remove_event_history" />
-        <com.dmedia.dlimited.SettingsRemoveDBoxHistoryDialogPreference
+        <com.dmedia.dlimited.others.SettingsRemoveDBoxHistoryDialogPreference
             android:dialogMessage="@string/message_dialog_account_remove_dbox_history"
             android:key="pref_account_remove_dbox_history"
             android:layout="@layout/preferences"
@@ -102,7 +102,7 @@
         android:key="pref_category_etc"
         android:layout="@layout/preferences_category"
         android:title="@string/pref_title_category_etc">
-        <com.dmedia.dlimited.SettingsLogoutDialogPreference
+        <com.dmedia.dlimited.others.SettingsLogoutDialogPreference
             android:dialogMessage="@string/message_dialog_account_logout"
             android:key="pref_etc_logout"
             android:layout="@layout/preferences"
