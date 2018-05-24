@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_modify"
+        android:orderInCategory="100"
+        android:title="수정"
+        android:visible="false"
+        android:icon="@drawable/p10_bt_edit"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_review_list"
+        android:orderInCategory="100"
+        android:title="리뷰"
+        android:icon="@drawable/ic_reivew"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:icon="@drawable/p10_bt_share"
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="공유"
+        app:showAsAction="always">
+    </item>
+</menu>

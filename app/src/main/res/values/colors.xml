@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#757575</color>
+    <color name="colorMainTeal">#26a69a</color>
+
+    <color name="mainBlack">#000000</color>
+
+
+    <!-- dalping colors-->
+    <color name="black_overlay">#a5000000</color>
+
+    <color name="divider">#d4d4d4</color>
+
+    <color name="deactivation">#e6e6e6</color>
+    <color name="grayBack">#fafafa</color>
+    <color name="grayDarkBack">#e8e8e8</color>
+    <color name="listBack">#f3f4f6</color>
+    <color name="grayText">#454545</color>
+    <color name="lightGrayText">#909090</color>
+
+    <!--<color name="tabBottomColor">#ff4f65</color>-->
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="transparentBlack">#80000000</color>
+
+
+</resources>

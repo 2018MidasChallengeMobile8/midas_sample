@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_category_account"
+        android:layout="@layout/preferences_category"
+        android:title="@string/pref_title_category_account">
+        <Preference
+            android:key="pref_account_profile"
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_account_profile">
+            <intent
+                android:targetClass="com.dmedia.dlimited.AccountEditProfileActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <!--
+        <Preference
+            android:key="pref_account_instagram"
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_account_instagram"></Preference>
+            -->
+        <Preference
+            android:key="pref_account_password"
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_account_password">
+            <intent
+                android:targetClass="com.dmedia.dlimited.AccountChangePasswordActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <Preference
+            android:key="pref_account_dcode"
+            android:layout="@layout/preferences"
+            android:title="D-Code 인증">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsDcodeActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <com.dmedia.dlimited.SettingsRemoveEventHistoryDialogPreference
+            android:dialogMessage="@string/message_dialog_account_remove_event_history"
+            android:key="pref_account_remove_event_history"
+            android:layout="@layout/preferences"
+            android:negativeButtonText="삭제"
+            android:positiveButtonText="취소"
+            android:title="@string/pref_title_account_remove_event_history" />
+        <com.dmedia.dlimited.SettingsRemoveDBoxHistoryDialogPreference
+            android:dialogMessage="@string/message_dialog_account_remove_dbox_history"
+            android:key="pref_account_remove_dbox_history"
+            android:layout="@layout/preferences"
+            android:negativeButtonText="삭제"
+            android:positiveButtonText="취소"
+            android:title="@string/pref_title_account_remove_dbox_history" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_account"
+        android:layout="@layout/preferences_category"
+        android:title="@string/pref_title_category_notification">
+        <Preference
+            android:key="notification_event"
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_notification_event">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsNotificationActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_support"
+        android:layout="@layout/preferences_category"
+        android:title="@string/pref_title_category_support">
+        <Preference
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_support_versioninfo">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsVersionActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <Preference
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_support_agreement">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsPolicyActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <Preference
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_support_help">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsFaqActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+        <Preference
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_support_contact">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsInquiryActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_etc"
+        android:layout="@layout/preferences_category"
+        android:title="@string/pref_title_category_etc">
+        <com.dmedia.dlimited.SettingsLogoutDialogPreference
+            android:dialogMessage="@string/message_dialog_account_logout"
+            android:key="pref_etc_logout"
+            android:layout="@layout/preferences"
+            android:negativeButtonText="@string/confirm"
+            android:positiveButtonText="@string/cancel"
+            android:title="@string/pref_title_etc_logout" />
+        <Preference
+            android:layout="@layout/preferences"
+            android:title="@string/pref_title_etc_withdraw">
+            <intent
+                android:targetClass="com.dmedia.dlimited.SettingsWithdrawActivity"
+                android:targetPackage="com.dmedia.dlimited" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">디리미티드</string>
+
+    <!--static으로 관리x 메모리 낭비-->
+    <string name="policy_terms">http://www.dlimited.co.kr/terms</string>
+    <string name="policy_privacy">http://www.dlimited.co.kr/privacy</string>
+    <string name="policy_manage">http://www.dlimited.co.kr/manage_policy</string>
+    <string name="policy_open_source">http://www.dlimited.co.kr/open_source_license</string>
+    <string name="insta_client_id">4af6e89709be49bda3fa22c503b9ad4a</string>
+    <string name="insta_client_secret">08bff91f3571467c9f45efa09fc690bd</string>
+    <string name="insta_redirect_url">http://www.dlimited.co.kr/api/user/insta/login</string>
+
+    <!--디자인 작업 시작 : 액티비티_작업_내용-->
+    <string name="test_string">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="dcode_help">D-CODE란 D-limited를 이용하는 인증된 고객들을 위한 코드입니다. D-CODE가 없는 경우는 우선 SKIP을 하신 후 문의하기를 통해서 관리자에게 요청을 해주세요.</string>
+
+    <string name="action_next_english">NEXT</string>
+    <string name="action_finish_english">FINISH</string>
+    <string name="action_skip_english">SKIP</string>
+
+    <string name="title_english">TITLE</string>
+    <string name="information_english">INFORMATION</string>
+    <string name="date_english">DATE</string>
+    <string name="time_english">TIME</string>
+    <string name="limit_english">LIMIT</string>
+    <string name="spot_english">SPOT</string>
+
+    <string name="request_korean">요청사항</string>
+    <string name="information_korean">정보</string>
+    <string name="group_korean">구성</string>
+    <string name="permit_korean">승인</string>
+
+
+    <string name="login_action_create_account">CREATE ACCOUNT</string>
+    <string name="login_action_login">LOG IN</string>
+    <string name="login_action_find_password">비밀번호를 잃어버리셨나요?</string>
+    <string name="login_hint_phone">Login with Phone Number</string>
+    <string name="login_hint_password">Password</string>
+
+    <string name="agreement_text_service_agreement">서비스 이용약관</string>
+    <string name="agreement_text_service_agreement_check">D-Limited의 이용약관에 동의합니다</string>
+    <string name="agreement_text_personal_agreement">개인정보 수집약관</string>
+    <string name="agreement_text_personal_agreement_check">D-Limited의 수집약관에 동의합니다</string>
+
+    <string name="signup1_action_send">인증번호 발송</string>
+    <string name="signup1_hint_phone">휴대폰 번호(특수기호 입력불가)</string>
+    <string name="signup1_hint_certification">인증번호</string>
+    <string name="signup1_hint_password">비밀번호(8~16자리)</string>
+    <string name="signup1_hint_password_confirm">비밀번호 확인</string>
+    <string name="signup1_text_certification_number">휴대폰 번호로 인증문자가 전송됩니다.</string>
+    <string name="signup1_text_time_limit">3:00분 이내에 입력해 주세요.</string>
+    <string name="signup1_text_password_setting">비밀번호는 8~16자의 영문,숫자를 조합하여 설정해주세요.</string>
+
+    <string name="signup2_hint_enter_nickname">닉네임을 입력해주세요</string>
+    <string name="signup2_hint_enter_gender">성별을 입력해주세요</string>
+    <string name="signup2_hint_enter_date">생년월일을 입력해주세요</string>
+    <string name="signup2_hint_enter_place">지역을 선택해주세요</string>
+    <string name="signup2_action_connect_insta">INSTAGRAM에 연결</string>
+
+    <string name="signup3_text_enter_dcode">D-Code 입력</string>
+    <string name="signup3_text_information_dcode">D-Code 안내</string>
+    <string name="signup3_text_guest_check_dcode">GUEST확인을 위해 인증코드를 입력해주세요</string>
+
+    <string name="event_make_hint_title">이벤트 제목을 입력해주세요</string>
+    <string name="event_make_hint_information">파티의 정보를 이곳에 입력해주세요.\n(Ex. 이 파티는 창업 기획자 이계익의 생일파티입니다.)</string>
+    <string name="event_make_hint_request">요청사항이 있다면 이곳에 글을 써주세요.\n(ex. D-Guest와 네트워킹 하고 싶습니다.\n멤버를 공개 하고싶습니다.)</string>
+    <string name="event_make_hint_date">날짜를 선택해주세요</string>
+    <string name="event_make_hint_time">시간을 선택해주세요</string>
+    <string name="event_make_action_make">EVENT 개설 요청</string>
+
+    <string name="event_detail_action_add_main_guest">Main Guest 추가</string>
+    <string name="event_detail_action_waiting_list">신청 대기 리스트</string>
+
+    <string name="event_modify_action_modify">정보 수정</string>
+
+    <string name="product_make_hint_information">상품의 정보를 이곳에 입력해주세요.\n(ex. 이 상품은 어떤 상품입니다.)</string>
+
+
+    <string name="event_list_dialog_state_title">Event 개설 상태</string>
+    <string name="product_list_dialog_state_title">Product 개설 상태</string>
+    <string name="event_list_dialog_state_wait_permit">- 승인대기 : 승인 받기 전</string>
+    <string name="event_list_dialog_state_wait_progress">- 진행대기 : 승인 받고 일자가 남았을 경우</string>
+    <string name="event_list_dialog_state_ongoing_progress">- 진행중 : 승인 받고 일자가 오늘인 경우</string>
+    <string name="event_list_dialog_state_finish">- 완료 : 승인 받고 일자가 지났을 경우</string>
+    <string name="event_list_dialog_state_cancel">- 취소 : 승인 받지 못하고 일자가 지났을 경우</string>
+
+
+    <string name="find_password_text_admin_comment">회원님 핸드폰 번호로 인증번호를 전송하여\n문제를 해결합니다. 문제가 지속될 경우 D-Limited\n고객센터를 방문하세요.</string>
+    <string name="find_password_text_account_phone">회원님의 계정과 연결된\n휴대폰 번호를 입력하세요</string>
+
+    <string name="setting_policy_terms">서비스 이용약관</string>
+    <string name="setting_policy_privacy">개인정보 취급 방침</string>
+    <string name="setting_policy_manage">운영정책</string>
+    <string name="setting_policy_open_source">오픈소스 라이센스</string>
+
+    <string name="account_signup_insta_help">D-Limited는 Instagram 기반 서비스입니다.\nInstagram 연동을 안하시면 서비스 이용에 제한이 있습니다.</string>
+    <string name="instagram_dummy_image_url">https://scontent-icn1-1.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg</string>
+
+    <!---->
+
+
+    <string name="action_login">로그인</string>
+    <string name="action_search">검색</string>
+    <string name="action_signup">회원가입</string>
+
+    <string name="agreement">이용약관</string>
+
+
+    <string name="error_invalid_phone">올바른 휴대폰 번호가 아닙니다</string>
+    <string name="error_invalid_password">올바른 비밀번호가 아닙니다</string>
+
+    <string name="pref_title_notification_event">알림 설정</string>
+
+    <string name="pref_title_account_remove_event_history">생성 이벤트 전체 삭제</string>
+    <string name="pref_title_account_remove_dbox_history">생성 D-BOX 전체 삭제</string>
+
+    <string-array name="category_location">
+        <item>서울특별시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>경상남도</item>
+        <item>경상북도</item>
+        <item>광주광역시</item>
+        <item>대구광역시</item>
+        <item>대전광역시</item>
+        <item>부산광역시</item>
+        <item>세종특별자치시</item>
+        <item>울산광역시</item>
+        <item>인천광역시</item>
+        <item>제주특별자치도</item>
+        <item>전라남도</item>
+        <item>전라북도</item>
+        <item>충청남도</item>
+        <item>충청북도</item>
+    </string-array>
+
+    <string-array name="people_count">
+        <item>10명</item>
+        <item>20명</item>
+        <item>30명</item>
+        <item>40명</item>
+    </string-array>
+
+    <!--todo: 카테고리 최종본으로 수정하기-->
+
+    <string-array name="class_name">
+        <item>Sponsor</item>
+        <item>Celebrity</item>
+        <item>Host</item>
+    </string-array>
+
+    <string-array name="category_inquiry">
+        <item>일반 문의</item>
+        <item>계정 문의</item>
+        <item>가입/탈퇴 문의</item>
+        <item>서비스 개선사항 제안</item>
+    </string-array>
+
+    <!-- dalping strings-->
+
+    <!-- Commons -->
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="toast_backbutton">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+
+    <!-- Strings related to NetManager -->
+    <string name="error_internet_connection_title">접속에러</string>
+    <string name="error_internet_connection_content">네트워크 상태를 확인해주세요</string>
+
+    <!-- Strings related to intro tutorial activity -->
+
+    <!-- Strings related to login -->
+    <string name="error_field_required">입력 양식을 채워주세요</string>
+
+    <!-- Strings related to settings -->
+    <string name="pref_title_category_account">계정</string>
+    <string name="pref_title_account_profile">프로필 설정</string>
+    <string name="pref_title_account_password">비밀번호 변경</string>
+    <string name="message_dialog_account_remove_event_history">생성한 이벤트를 모두 삭제합니다.\n삭제된 내용은 다시 확인할 수 없습니다.\n정말 삭제하시겠습니까?</string>
+    <string name="message_dialog_account_remove_dbox_history">생성한 디박스를 모두 삭제합니다.\n삭제된 내용은 다시 확인할 수 없습니다.\n정말 삭제하시겠습니까?</string>
+
+    <string name="pref_title_category_notification">알림</string>
+
+    <string name="pref_title_category_support">고객지원</string>
+    <string name="pref_title_support_versioninfo">버전정보</string>
+    <string name="pref_title_support_help">FAQ</string>
+    <string name="pref_title_support_contact">문의하기</string>
+    <string name="pref_title_support_agreement">약관 및 정책</string>
+
+    <string name="pref_title_category_etc">서비스</string>
+    <string name="pref_title_etc_logout">로그아웃</string>
+    <string name="message_dialog_account_logout">로그아웃 하시겠습니까?</string>
+    <string name="pref_title_etc_withdraw">서비스 탈퇴</string>
+
+</resources>

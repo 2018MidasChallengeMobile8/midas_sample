@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmedia.dlimited">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--Image Selector Entry-->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".SettingsPolicyContentsActivity"
+            android:parentActivityName=".SettingsPolicyActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsPolicyActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsDcodeActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".WalkthroughActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProductReviewDetailActivity"
+            android:parentActivityName=".ProductReviewListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductReviewListActivity" />
+        </activity>
+        <activity
+            android:name=".ProductReviewApplyActivity"
+            android:parentActivityName=".ProductInformationActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductInformationActivity" />
+        </activity>
+        <activity
+            android:name=".ProductReviewListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ProductListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ProductListDetailApplyListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ProductListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".GalleryImageDetailActivity"
+            android:parentActivityName=".GalleryTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GalleryTabActivity" />
+        </activity>
+        <activity
+            android:name=".EventSearchActivity"
+            android:parentActivityName=".HomeTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeTabActivity" />
+        </activity>
+        <activity
+            android:name=".AccountEditProfileActivity"
+            android:parentActivityName=".MyPageTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPageTabActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsFaqActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsWithdrawActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name="SettingsPolicyActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsInquiryActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsVersionActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsNotificationActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".AccountChangePasswordActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".AccountResetPasswordActivity"
+            android:parentActivityName=".AccountFindPasswordActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccountFindPasswordActivity" />
+        </activity>
+        <activity
+            android:name=".ProductInformationActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".DBoxTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DBoxTabActivity" />
+        </activity>
+        <activity
+            android:name=".ProductModifyActivity"
+            android:parentActivityName=".ProductListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ProductListDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ProductListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductListActivity" />
+        </activity>
+        <activity
+            android:name=".ProductListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".DBoxTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DBoxTabActivity" />
+        </activity>
+        <activity
+            android:name=".ProductMakeActivity"
+            android:parentActivityName=".DBoxTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DBoxTabActivity" />
+        </activity>
+        <activity
+            android:name=".ProductSearchActivity"
+            android:parentActivityName=".DBoxTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DBoxTabActivity" />
+        </activity>
+        <activity
+            android:name=".EventApplyActivity"
+            android:parentActivityName=".EventInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventInformationActivity" />
+        </activity>
+        <activity
+            android:name=".EventInformationActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeTabActivity" />
+        </activity>
+        <activity
+            android:name=".EventModifyActivity"
+            android:parentActivityName=".EventListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".MemberViewActivity"
+            android:parentActivityName=".EventListDetailApplyListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListDetailApplyListActivity" />
+        </activity>
+        <activity
+            android:name=".EventListDetailApplyListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".EventListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MyPageTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPageTabActivity" />
+        </activity>
+        <activity
+            android:name=".MyPageTabActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GalleryTabActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DBoxTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dbox_tab"
+                    android:scheme="dlimited" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventImageUploadActivity"
+            android:parentActivityName=".EventListDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListDetailActivity" />
+        </activity>
+        <activity
+            android:name=".EventListDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListActivity" />
+        </activity>
+        <activity
+            android:name=".EventListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeTabActivity" />
+        </activity>
+        <activity
+            android:name=".EventMakeActivity"
+            android:parentActivityName=".HomeTabActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeTabActivity" />
+        </activity>
+        <activity
+            android:name=".AccountFindPasswordActivity"
+            android:parentActivityName=".AccountLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccountLoginActivity" />
+        </activity>
+        <activity
+            android:name=".AccountSignupActivity3"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".AccountSignupActivity2"
+            android:parentActivityName=".AccountSignupActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccountSignupActivity1" />
+        </activity>
+        <activity
+            android:name=".AccountSignupActivity1"
+            android:parentActivityName=".AccountSignupAgreementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccountSignupAgreementActivity" />
+        </activity>
+        <activity
+            android:name=".AccountSignupAgreementActivity"
+            android:parentActivityName=".AccountLoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccountLoginActivity" />
+        </activity>
+        <!-- 키보드에 자동 포커스 맞춰지는것 방지 -->
+        <activity
+            android:name=".AccountLoginActivity"
+            android:parentActivityName=".IntroTutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Transparent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".IntroTutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntroActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="main" android:scheme="dlimited" />
+            </intent-filter>
+            -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RedirectActivity" />
+
+        <receiver android:name="SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".FcmFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FcmFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+    </application>
+
+</manifest>

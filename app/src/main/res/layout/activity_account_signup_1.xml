@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayDarkBack"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/p03_img_bgcut">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/p03_img_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grayDarkBack"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/btn_send"
+                        android:background="@null"
+                        android:hint="@string/signup1_hint_phone"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:nextFocusDown="@+id/edt_auth_sms"
+                        android:nextFocusLeft="@+id/edt_auth_sms"
+                        android:nextFocusRight="@+id/edt_auth_sms"
+                        android:padding="9dp"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_round_rectangle_fill_black"
+                        android:text="@string/signup1_action_send"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="9dp"
+                    android:text="@string/signup1_text_certification_number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_auth_sms"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/signup1_hint_certification"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:nextFocusDown="@+id/edt_password"
+                        android:nextFocusLeft="@+id/edt_password"
+                        android:nextFocusRight="@+id/edt_password"
+                        android:padding="9dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="9dp"
+                    android:text="@string/signup1_text_time_limit" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@null"
+                        android:hint="@string/signup1_hint_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:nextFocusDown="@+id/edt_password_confirm"
+                        android:nextFocusLeft="@+id/edt_password_confirm"
+                        android:nextFocusRight="@+id/edt_password_confirm"
+                        android:padding="9dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@null"
+                        android:hint="@string/signup1_hint_password_confirm"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="9dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="9dp"
+                    android:text="@string/signup1_text_password_setting" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_round_rectangle_fill_light_gray"
+                    android:text="@string/action_next_english"
+                    android:textColor="@color/lightGrayText"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
