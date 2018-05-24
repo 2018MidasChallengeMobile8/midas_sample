@@ -35,7 +35,7 @@ public class MainGuestAddDialog extends Dialog implements View.OnClickListener {
 
     private ICustomDialogEventListener onCustomDialogEventListener;
 
-    protected MainGuestAddDialog(@NonNull Context context, ICustomDialogEventListener onCustomDialogEventListener) {
+    public MainGuestAddDialog(@NonNull Context context, ICustomDialogEventListener onCustomDialogEventListener) {
         super(context);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.onCustomDialogEventListener = onCustomDialogEventListener;
